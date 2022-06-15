@@ -30,11 +30,62 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">The Auto Arborist Dataset</h1>
       <h2 class="project-tagline">Sara Beery, Guanhang Wu, Trevor Edwards, Filip Pavetic, Bo Majewski, Shreyasee	Mukherjee, Stanley Chan, John Morgan, Vivek Rathod, Jonathan Huang</br>Caltech, Google</h2>
-      <!--- <a href="https://arxiv.org/coming-soon" style="font-size:1.3rem" class="btn">Paper</a> -->
+      <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Beery_The_Auto_Arborist_Dataset_A_Large-Scale_Benchmark_for_Multiview_Urban_CVPR_2022_paper.html" style="font-size:1.3rem" class="btn">Paper</a>
     </header>
 
     <main id="content" class="main-content" role="main">
-      <p>We are processing the dataset for release, if you are interested in receiving updates when the dataset is ready, please contact jonathanhuang@google.com. Note that by reaching out, you will be added to a mailing list (but you can ask to be removed at any time).</p>
+      
+<c><i><b>The Auto Arborist dataset is a multiview fine-grained visual categorization dataset that contains over 2 million trees belonging to over 300 genus-level categories in 23 cities across the US and Canada built to foster the development of robust methods for large-scale urban forest monitoring. The dataset was initially released as part of a <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Beery_The_Auto_Arborist_Dataset_A_Large-Scale_Benchmark_for_Multiview_Urban_CVPR_2022_paper.html">CVPR 2022 publication</a>. Data use and access information <a href="#data_use">here</a>.</b></c></i>
+
+<p style="margin-top:1cm;"><h1>Dataset Overview</h1></p>
+
+      <p><img src="assets/Auto_Arborist_Overview.png" alt="Overview of Auto Arborist Dataset" class="center-image"></p>
+<c><i>The 23 cities in our dataset are spread across the US and Canada, and are categorized into West, Central, and East Regions to enable us to study how well models generalize in a spatial and hierarchical manner.</c></i>    
+
+
+      <p><img src="assets/tree_gif.gif" alt="Trees in Cities in Auto Arborist" class="center-image-wide" /></p>
+<c><i>Tree records per city. Our dataset contains >300 tree genus classes. Note the shifts in distribution of common genera across cities (visualized by color). </c></i>
+      
+<p>
+We propose <b>urban forest monitoring</b> as an ideal testbed for working on several computer vision challenges (domain generalization, fine-grained categorization, long-tail learning, multiview vision), while working towards filling a crucial environmental and societal need. Urban forests provide significant benefits to urban societies (e.g., cleaner air and water, carbon sequestration, and energy savings among others). However, planning and maintaining these forests is expensive. One particularly costly aspect of urban forest management is monitoring the existing trees in a city: e.g., tracking tree locations, species, and health. Monitoring efforts are currently based on tree censuses built by human experts, costing cities millions of dollars per census and thus collected infrequently.
+</p>
+
+      <p><img src="assets/table.png" alt="Tree records" class="center-image-wide" /></p>
+<c><i>The number of tree records in each city, with the heldout cities in bold.</c></i>
+
+<p>
+Previous investigations into automating urban forest monitoring focused on small datasets from single cities, covering only common categories. To address these shortcomings, we introduce a new large-scale dataset that joins public tree censuses from 23 cities with a large collection of street level and aerial imagery. Our Auto Arborist dataset contains over <b>2.5M trees</b> and over <b>300 genera</b> and is more than 2 orders of magnitude larger than the closest dataset in the literature. In our paper we introduce baseline results on our dataset across modalities as well as metrics for the detailed analysis of generalization with respect to geographic distribution shifts, vital for such a system to be deployed at-scale. 
+</p>
+
+<p style="margin-top:1cm;"><h1>Dataset Challenges</h1></p>
+      <p>
+      <b>Generalization to novel domains is a fundamental challenge for computer vision.</b> Near-perfect accuracy on benchmarks is common, but these models do not work as expected when deployed outside of the training distribution. To build computer vision systems that truly solve real-world problems at global scale, we need benchmarks that fully capture real-world complexity, including geographic domain shift, long-tailed distributions, and data noise.
+</p>
+
+      <p style="text-align: center"><img src="long_tailed.png" alt="fine-grained" class="center" width="600"></p>
+<c><i>The data has a long-tailed distribution across categories, meaning that the majority of the examples in the dataset come from just a few frequent categories, and many of the examples have far fewer examples. We characterize each genera as frequent, common, or rare based on the number of training examples we have for that genera. Note that our test data is split spatially from our training data within each city, so not all rare species are seen in test.</c></i>
+
+      <p style="text-align: center"><img src="assets/taxonomy.png" alt="taxonomy" class="center" ></p>
+      <p style="text-align: center"><img src="assets/taxonomy_crop.png" alt="taxonomy zoomed in" class="center" width=300 ></p>
+<c><i>This dendrogram shows the taxonomic structure of the genera in Auto Arborist. The dataset is taxonomically diverse, with >300 different genera represented.</c></i>
+
+<p><img src="assets/blur.png" alt="blurred imagery" class="center"></p>
+<c><i>Examples of street level data after blurring for privacy.</c></i>
+
+
+<p style="margin-top:1cm;"><a id="data_use"><h1>Data Use and Access</h1></a></p>
+
+      <p> We may post updates about the project and dataset on our Google Group:
+<a href=https://groups.google.com/g/auto-arborist>https://groups.google.com/g/auto-arborist</a>. </p>
+
+<p>We would love to hear back from you if you have questions or suggestions or
+success stories relating to this dataset. You can reach out to us at:
+<a href=mailto:auto-arborist+managers@googlegroups.com>auto-arborist+managers@googlegroups.com</a>.</p>
+
+      <p>If you are interested in accessing the dataset please fill out the following form. We are releasing the dataset in phases, and we are manually verifying that PII is obscured for all images before release. A data card for our model can be downloaded <a href="assets/Auto_Arborist_CVPR_2022_Data_Card.pdf" download>here</a>.</p>
+      <p align="center"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctUfmFDk55_-0vacLizdQf_j0LOBYmwRY2xjMHTunCpySLBg/viewform?embedded=true" width="640" height="990" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p>
+
+
 
 
       <footer class="site-footer">

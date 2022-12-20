@@ -7,6 +7,7 @@ Usage of this dataset is subject to terms. See the [dataset webpage](https://goo
 The dataset consists of CSVs containing ~4.5M basic processed tree records from
 23 cities and tfrecords that contain imagery for a subset of the trees.
 
+```
 README - Info about the dataset.
 
 tree_locations/ - Contains the parsed and cleaned up tree inventories of each
@@ -54,7 +55,7 @@ tfrecords/ - Contains train/test TFRecord files with one aerial and blurred
            center pixel of the tree in the image.
         y: int64. This is always set to half of the image height. It is provided
            for convenience.
-
+```
 
 == Citations ==
 

@@ -64,14 +64,14 @@ If you use the Auto Arborist dataset for a research publication, please consider
 "The Auto Arborist Dataset: A Large-Scale Benchmark for Multiview Urban Forest Monitoring Under Domain Shift." Sara Beery, Guanhang Wu, Trevor Edwards, Filip Pavetic, Bo Majewski, Shreyasee Mukherjee, Stanley Chan, John Morgan, Vivek Rathod, Jonathan Huang, CVPR 2022
 
 Alternatively, you may provide this BibTeX citation:
-
+```
 @inproceedings{beery2022autoarborist,
   title={The Auto Arborist Dataset: A Large-Scale Benchmark for Multiview Urban Forest Monitoring Under Domain Shift.},
   author={Sara Beery and Guanhang Wu and Trevor Edwards and Filip Pavetic and Bo Majewski and Shreyasee Mukherjee and Stanley Chan and John Morgan and Vivek Rathod and Jonathan Huang},
   booktitle={CVPR},
   year={2022}
 }
-
+```
 == Updates and Feedback ==
 
 We may post updates about the project and dataset on our Google Group:

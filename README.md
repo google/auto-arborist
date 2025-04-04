@@ -79,7 +79,7 @@ https://groups.google.com/g/auto-arborist
 
 We would love to hear back from you if you have questions or suggestions or
 success stories relating to this dataset. You can reach out to us at:
-auto-arborist+managers@googlegroups.com.
+auto-arborist-external@google.com.
 
 We have used a combination of automatic and manual methods to blur out
 non-vegetation pixels in our dataset in order to protect privacy.  However, if
